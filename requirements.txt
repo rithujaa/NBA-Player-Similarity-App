@@ -1,4 +1,5 @@
 streamlit==1.16.0
 pandas==1.4.4
 numpy==1.21.5
+scikit-learn==1.0.2
 soccerplots==1.0.0
