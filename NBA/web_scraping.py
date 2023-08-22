@@ -20,19 +20,19 @@ time.sleep(2)
 
 html = driver.page_source
 
-with open("/Users/rithujaa/Desktop/NBA/2022.html", "w+") as f:
+with open("/Users/rithujaa/Desktop/nba_repo/NBA-Player-Similarity-App/NBA/2022.html", "w+") as f:
     f.write(html)
 
-with open("/Users/rithujaa/Desktop/NBA/2022.html") as f:
+with open("/Users/rithujaa/Desktop/nba_repo/NBA-Player-Similarity-App/NBA/2022.html") as f:
     page = f.read()
     
 soup = BeautifulSoup(page, "html.parser")
 soup.find('tr', class_ = "thead").decompose()
 player_table = soup.find(id="per_game_stats")
 player = pd.read_html(str(player_table))[0]    
-player.to_csv("/Users/rithujaa/Desktop/NBA/raw_data.csv")
+player.to_csv("/Users/rithujaa/Desktop/nba_repo/NBA-Player-Similarity-App/NBA/raw_data.csv")
 
-players = pd.read_csv("/Users/rithujaa/Desktop/NBA/raw_data.csv")
+players = pd.read_csv("/Users/rithujaa/Desktop/nba_repo/NBA-Player-Similarity-App/NBA/raw_data.csv")
 players = players.fillna(0)
 del players["Unnamed: 0"]
 del players["Rk"]
@@ -52,5 +52,5 @@ players = players.groupby(["Player", "Year"]).apply(single_row)
 
 players.index = players.index.droplevel() #run it two times to remove the first 2 index columns
 
-players.to_csv("/Users/rithujaa/Desktop/NBA/players_data.csv")
+players.to_csv("/Users/rithujaa/Desktop/nba_repo/NBA-Player-Similarity-App/NBA/players_data.csv")
 

@@ -11,7 +11,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder
 from soccerplots.radar_chart import Radar
 
-players = pd.read_csv("/Users/rithujaa/Desktop/NBA/players_data.csv")
+players = pd.read_csv("/Users/rithujaa/Desktop/nba_repo/NBA-Player-Similarity-App/NBA/players_data.csv")
 
 del players["Year"]
 del players["Unnamed: 0"]
