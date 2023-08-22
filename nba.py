@@ -6,9 +6,7 @@ This is a temporary script file.
 """
 import streamlit as st
 import pandas as pd
-import seaborn as sns
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder
 from soccerplots.radar_chart import Radar
