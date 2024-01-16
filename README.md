@@ -5,3 +5,7 @@ I developed this web app using machine learning, k-means clustering, and Euclide
 based on statistical similarities and scraped the NBA players data from Basketball-Reference using selenium.
 Implemented using Python and Streamlit and deployed on the web for user exploration.
 
+
+
+https://github.com/rithujaa/NBA-Player-Similarity-App/assets/72927801/b6d0a18b-fa15-4faa-9b78-b8bb7ece394d
+
