@@ -9,3 +9,4 @@ Implemented using Python and Streamlit and deployed on the web for user explorat
 
 https://github.com/rithujaa/NBA-Player-Similarity-App/assets/72927801/b6d0a18b-fa15-4faa-9b78-b8bb7ece394d
 
+[NBA Player Similarity App](https://nba-player-similarity-tool.streamlit.app/) 
